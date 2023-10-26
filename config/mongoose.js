@@ -1,5 +1,5 @@
 require('dotenv').config();
-require the library
+//require the library
 const mongoose = require('mongoose');
 
 // here we are using the MongoDB Url we defined in our ENV file

@@ -12,12 +12,20 @@
       background-color: #f8f9fa;
     }
 
+    .header {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+    }
+
     .project-card {
       background-color: #ffffff;
       border: 1px solid #6c757d;
       border-radius: 10px;
       padding: 20px;
-      margin-top: 50px;
+      margin-top: -10px; /* Overlapping with header for a stylish look */
     }
 
     .card-title {
@@ -42,6 +50,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
+        <div class="header">
+          <h1>Project Details</h1>
+        </div>
         <div class="project-card">
           <h3 class="card-title"><%= project.name %></h3>
           <h6 class="card-subtitle mb-2 text-muted"><%= project.author %></h6>

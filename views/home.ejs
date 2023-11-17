@@ -1,23 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .mb-5 {
+      margin-bottom: 5rem;
+    }
+
+    .p-5 {
+      padding: 5rem;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .card-body {
+      background-color: #ffffff;
+    }
+
+    .card-subtitle {
+      color: #6c757d;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
 <div class="mb-5 p-5">
   <% for( let project of projects ) { %>
-  <div class="card mb-2 w-50 m-auto">
-    <div class="card-header">
-      <strong> Name of the project : </strong><%= project.name %>
-    </div>
-    <div class="card-body">
-      <h6 class="card-subtitle mb-2 text-muted">
-        <strong> Author : </strong> <%= project.author %>
-      </h6>
-      <p class="card-text">
-        <strong> Description : </strong><%= project.description %>
-      </p>
+    <div class="card mb-2 w-50 m-auto">
+      <div class="card-header">
+        <strong> Name of the project : </strong><%= project.name %>
+      </div>
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">
+          <strong> Author : </strong> <%= project.author %>
+        </h6>
+        <p class="card-text">
+          <strong> Description : </strong><%= project.description %>
+        </p>
 
-      <div class="m-auto text-end">
-        <a href="/project/<%=project._id%>" class="btn btn-primary m-auto"
-          >Open project</a
-        >
+        <div class="m-auto text-end">
+          <a href="/project/<%=project._id%>" class="btn btn-primary m-auto">Open project</a>
+        </div>
       </div>
     </div>
-  </div>
   <% } %>
 </div>
+
+</body>
+</html>

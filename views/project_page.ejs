@@ -9,7 +9,6 @@
   <style>
     body {
       background-color: white;
-      background-image: url("https://img.freepik.com/premium-photo/abstract-holographic-iridescent-neon-wall-motion-dark-background-gradient-design-element-banners-backgrounds-wallpapers-covers-3d-render_91497-10492.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699401600&semt=ais");
 
     }
 
@@ -50,10 +49,6 @@
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
         <div class="container-card">
           <div class="header">
             <h1>Project Details</h1>
@@ -61,12 +56,9 @@
           <h3 class="card-title"><%= project.name %></h3>
           <h5 class="card-subtitle mb-2 text-muted"><%= project.author %></h5>
           <h5><p class="card-text"><%= project.description %></p></h5>
-        </div>
 
         <%- include('./partials/_issues'); %>
       </div>
-    </div>
-  </div>
 
   <!-- Bootstrap JS and Popper.js -->
 </body>

@@ -9,10 +9,6 @@
   },
   "author": "navjot",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",

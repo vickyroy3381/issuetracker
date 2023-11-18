@@ -1,67 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-     background-color: white;
-    }
-
-    .card{
-      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-      max-width: 500px;
-      height: 150px;
-      margin: auto;
-      text-align: left;
-      padding:20px;
-      font-family: arial;
-      background-color: white;
-    }
-
-    .header {
-      background-color: #007bff;
-      color: #ffffff;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px 10px 0 0;
-      margin-bottom: 20px;
-    }
-
-    .card-title {
-      font-size: 1.5rem;
-      color: #007bff;
-      margin-bottom: 0.5rem;
-      padding: 20px;
-    }
-
-    .card-subtitle {
-      color: #6c757d;
-      margin-bottom: 1rem;
-      padding: 20px;
-    }
-
-    .card-text {
-      color: #495057;
-    }
-  </style>
-</head>
-
-<body>
-        <div class="card">
-          <div class="header">
-            <h1>Project Details</h1>
-          </div>
-          <h3 class="card-title" ><strong> Project Name : </strong><%= project.name %></h3>
-          <h5 class="card-subtitle mb-2 text-muted"><strong> Author : </strong><%= project.author %></h5>
-          <h5><p class="card-text"><strong> Description : </strong><%= project.description %></p></h5>
-        <%- include('./partials/_issues'); %>
-      </div>
-
-  <!-- Bootstrap JS and Popper.js -->
-</body>
-
-</html>
+<div class="w-50 border border-secondary border-1 p-3 m-auto">
+  <h3 class="display-5 p-3 mb-2 bg-secondary text-white">
+    Project : <%= project.name %>
+  </h3>
+  <h4 class="display-6 p-3 mb-2 bg-light text-dark">
+    Author : <%= project.author %>
+  </h4>
+  <h5 class="display-6 p-3 mb-2 bg-info text-dark">
+    Description : <%= project.description %>
+  </h5>
+</div>
+<%-include('./partials/_issues'); %>

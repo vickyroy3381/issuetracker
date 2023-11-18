@@ -15,6 +15,7 @@
     }
 
     .container-card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       background-color: #ffffff;
       border: 1px solid #6c757d;
       border-radius: 10px;
@@ -58,8 +59,8 @@
             <h1>Project Details</h1>
           </div>
           <h3 class="card-title"><%= project.name %></h3>
-          <h6 class="card-subtitle mb-2 text-muted"><%= project.author %></h6>
-          <p class="card-text"><%= project.description %></p>
+          <h5 class="card-subtitle mb-2 text-muted"><%= project.author %></h5>
+          <h5><p class="card-text"><%= project.description %></p></h5>
         </div>
 
         <%- include('./partials/_issues'); %>

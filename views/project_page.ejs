@@ -1,12 +1,74 @@
-<div class="w-50 border border-secondary border-1 p-3 m-auto">
-  <h3 class="display-5 p-3 mb-2 bg-secondary text-white">
-    Project : <%= project.name %>
-  </h3>
-  <h4 class="display-6 p-3 mb-2 bg-light text-dark">
-    Author : <%= project.author %>
-  </h4>
-  <h5 class="display-6 p-3 mb-2 bg-info text-dark">
-    Description : <%= project.description %>
-  </h5>
-</div>
-<%-include('./partials/_issues'); %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa; /* Set a background color for the body */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Make the page take the full viewport height */
+    }
+
+    .project-card {
+      width: 50%;
+      border: 1px solid #ced4da; /* Use a subtle border color */
+      padding: 20px;
+      margin: auto;
+      background-color: #fff; /* Set a background color for the card */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .project-header {
+      margin-bottom: 20px;
+      padding: 15px;
+      color: #fff;
+    }
+
+    .project-name {
+      background-color: #007bff; /* Set a background color for the project name header */
+    }
+
+    .project-author {
+      background-color: crimson; /* Set a background color for the project author header */
+    }
+
+    .project-description {
+      background-color: #17a2b8; /* Set a background color for the project description header */
+    }
+
+    h3, h4, h5 {
+      margin: 0; /* Remove default margin for better spacing */
+    }
+
+    /* Add more styles as needed */
+
+  </style>
+</head>
+
+<body>
+
+  <div class="project-card">
+    <h3 class="display-5 project-header project-name text-white">
+      Project: <%= project.name %>
+    </h3>
+    <h4 class="display-6 project-header project-author text-dark">
+      Author: <%= project.author %>
+    </h4>
+    <h5 class="display-6 project-header project-description text-dark">
+      Description: <%= project.description %>
+    </h5>
+  </div>
+
+  <!-- Include your JavaScript files here -->
+
+</body>
+
+</html>

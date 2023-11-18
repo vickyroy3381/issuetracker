@@ -3,15 +3,7 @@
 
 A Nodejs + EJS + MongoDB + Express application to track issues/bugs for a project.
 
-# How to use ?
 
-Run this command in your GitHub CLI
-
-- gh repo clone kamendergangwar/Issue-tracker
-
-# or use the URL
-
-https://github.com/kamendergangwar/Issue-tracker.git
 
 # Features
 
@@ -25,6 +17,4 @@ https://github.com/kamendergangwar/Issue-tracker.git
 
 -Used Bootstrap for neat UI.
 
-# Hosted URL
-Project already deployed on Render.com. 
-Visit:https://issue-tracker-c3xv.onrender.com/
+

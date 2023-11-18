@@ -1,8 +1,65 @@
-<!-- shows create project button on project page and create issue buton if the project is open -->
-<nav class="navbar navbar-expand-sm bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand ms-4" href="/"> Issue Tracker </a>
-    <% if( title === "Project Page"){ %> <%- include('_issue_form'); %> <%
-    }else{ %> <%- include('_project_form'); %> <% } %>
-  </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+
+    /* Add more styles as needed */
+
+    /* Styles for _issue_form and _project_form can be added in their respective files */
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="/">Issue Tracker</a>
+
+      <% if (title === "Project Page") { %>
+        <%- include('_issue_form'); %>
+      <% } else { %>
+        <%- include('_project_form'); %>
+      <% } %>
+    </div>
+  </nav>
+
+  <!-- Your main content goes here -->
+
+  <!-- Include your JavaScript files here -->
+
+</body>
+
+</html>

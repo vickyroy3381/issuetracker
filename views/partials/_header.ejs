@@ -13,7 +13,7 @@
     }
 
     .navbar {
-      background-color: #f8f9fa;
+      background-color: black;
       padding: 10px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -27,7 +27,7 @@
     .navbar-brand {
       font-size: 1.5em;
       font-weight: bold;
-      color: #007bff;
+      color: whitesmoke;
       text-decoration: none;
     }
 
@@ -35,9 +35,7 @@
       color: #0056b3;
     }
 
-    /* Add more styles as needed */
-
-    /* Styles for _issue_form and _project_form can be added in their respective files */
+    
 
   </style>
 </head>
@@ -48,11 +46,7 @@
     <div class="container-fluid">
       <a class="navbar-brand ms-4" href="/">Issue Tracker</a>
 
-      <% if (title === "Project Page") { %>
-        <%- include('_issue_form'); %>
-      <% } else { %>
-        <%- include('_project_form'); %>
-      <% } %>
+      
     </div>
   </nav>
 

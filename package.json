@@ -7,16 +7,12 @@
     "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kamendergangwar/Issue-tracker.git"
-  },
-  "author": "Kamender Singh Gangwar",
+  "author": "navjot",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kamendergangwar/Issue-tracker/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/kamendergangwar/Issue-tracker#readme",
+  "homepage": "",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",

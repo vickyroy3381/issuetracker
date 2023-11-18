@@ -15,9 +15,10 @@
     .card{
       box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
       max-width: 500px;
-      height: 200px;
+      height: 150px;
       margin: auto;
       text-align: left;
+      padding:20px;
       font-family: arial;
       background-color: white;
     }
@@ -52,12 +53,12 @@
 
 <body>
         <div class="card">
-          <div class="header" style="padding: 20px;">
+          <div class="header">
             <h1>Project Details</h1>
           </div>
-          <h3 class="card-title" style="padding: 20px;"><strong> Project Name : </strong><%= project.name %></h3>
-          <h5 class="card-subtitle mb-2 text-muted" style="padding: 20px;"><strong> Author : </strong><%= project.author %></h5>
-          <h5><p class="card-text" style="padding: 20px;"><strong> Description : </strong><%= project.description %></p></h5>
+          <h3 class="card-title" ><strong> Project Name : </strong><%= project.name %></h3>
+          <h5 class="card-subtitle mb-2 text-muted"><strong> Author : </strong><%= project.author %></h5>
+          <h5><p class="card-text"><strong> Description : </strong><%= project.description %></p></h5>
         <%- include('./partials/_issues'); %>
       </div>
 
